@@ -1,0 +1,633 @@
+.pop-tab li{ color: rgba(140,198,63,1);
+	border-bottom: 2px solid rgba(140,198,63,1) }
+.f-ws {
+	overflow: hidden;
+	word-wrap: normal;
+	white-space: nowrap;
+	text-overflow: ellipsis
+}
+
+.put-case .pop-bg {
+	position: absolute
+}
+
+.pop-bg-ok,
+.pop-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/*background: url("../img/pop-bg.png") repeat 0 0;*/
+	z-index: 100
+}
+
+.pop-bg {
+	display: none
+}
+
+.pop-bg-ok {
+	display: block
+}
+
+.pop-reg,
+.ver-phone,
+.find-pw,
+.wechat-log,
+.pop-addmt,
+.reg-succ,
+.made-need,
+.sche-pop {
+	position: fixed;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 3px;
+	z-index: 100
+}
+
+.pop-reg,
+.ver-phone,
+.find-pw,
+.wechat-log,
+.pop-addmt,
+.reg-succ {
+	top: 15vh;
+	width: 400px;
+	border: 1px solid #e6e6e6;
+	border-radius: 3px ;
+}
+
+.pop-del,
+.pop-back {
+	position: absolute;
+	top: 14px;
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+	z-index: 100
+}
+
+.pop-del {
+	right: 15px;
+	background: url("../img/i-pop-del.png") no-repeat center center
+}
+
+.pop-back {
+	left: 15px;
+	/*background: url("../img/i-pop-back.png") no-repeat 0 center*/
+}
+
+.pop-tab {
+	width: 100%;
+	height: 54px;
+	line-height: 54px;
+	border-bottom: 2px solid #f0f0f0
+}
+
+.pop-tab li {
+	float: left;
+	margin: 0 15px;
+	padding: 0 15px;
+	font-size: 16px;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s
+}
+
+.pop-tab li.one,
+.pop-tab li:hover {
+	color: rgba(140,198,63,1);
+	border-bottom: 2px solid rgba(140,198,63,1)
+}
+
+.inner.pop-ct {
+	padding: 0
+}
+
+.inner.pop-ct input {
+	padding: 12px 10px
+}
+
+.pop-ct {
+	padding: 25px 40px
+}
+
+.pop-ct input:focus {
+	border: 1px solid #f80
+}
+
+.pop-ct input,
+.pop-ct .send-code {
+	margin-bottom: 25px;
+	padding: 11px 15px;
+	font-size: 14px;
+	line-height: 18px;
+	border-radius: 3px
+}
+
+.pop-ct .pop-txt-w {
+	width: 288px
+}
+
+.pop-ct .pop-txt-b {
+	border: 1px solid #dbdbdb
+}
+
+.pop-ct .cod {
+	display: inline-table;
+	width: 174px
+}
+
+.pop-ct .send-code {
+	right: 0;
+	left: inherit !important;
+	display: block;
+	width: 105px;
+	color: #f80;
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid #f80;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+.pop-ct .pop-num {
+	height: 40px;
+	margin-bottom: 25px
+}
+
+.pop-ct .error-tips,
+.pop-ct .pw-tips {
+	top: 41px
+}
+
+.pop-ct .pw-tips {
+	color: #999
+}
+
+.pop-ct .pw.u-mb0 {
+	margin-bottom: 0
+}
+
+.pop-ct .desc {
+	display: block;
+	margin: -8px 0 10px;
+	color: #999
+}
+
+.pop-ct .mobile-yzm {
+	width: 110px;
+	height: 40px
+}
+
+.pop-ct .mobile-yzm img {
+	width: 110px;
+	height: 40px
+}
+
+.pop-ct .change-yzm {
+	font-size: 12px
+}
+
+.separate-entrance .mobile-yzm {
+	width: 120px;
+	height: 45px;
+	margin-right: 5px
+}
+
+.separate-entrance .mobile-yzm img {
+	width: 120px;
+	height: 45px
+}
+
+.separate-entrance .change-yzm {
+	font-size: 14px;
+	line-height: 22px
+}
+
+.separate-entrance .error-tips,
+.separate-entrance .pw-tips {
+	top: 46px
+}
+
+.pop-ct .mobile,
+.separate-entrance .mobile {
+	float: left;
+	width: 120px;
+	margin-right: 12px
+}
+
+.pop-ct .mobile-yzm,
+.separate-entrance .mobile-yzm {
+	float: right;
+	cursor: pointer
+}
+
+.pop-ct .mobile-yzm img,
+.separate-entrance .mobile-yzm img {
+	display: inline-block
+}
+
+.pop-ct .change-yzm,
+.separate-entrance .change-yzm {
+	float: right;
+	text-align: right;
+	width: 45px;
+	color: #299dd2;
+	cursor: pointer
+}
+
+.pop-ct .error-tips,
+.separate-entrance .error-tips {
+	padding-left: 18px;
+	color: #ff636a;
+	/*background: url("../img/i-txt-tips.png") no-repeat 0 center*/
+}
+
+.pop-ct .pop-num,
+.separate-entrance .pop-num,
+.pop-ct .m-item,
+.separate-entrance .m-item,
+.pop-ct .m-item-1,
+.separate-entrance .m-item-1 {
+	position: relative;
+	clear: both
+}
+
+.pop-ct .pop-num input,
+.separate-entrance .pop-num input,
+.pop-ct .m-item input,
+.separate-entrance .m-item input,
+.pop-ct .m-item-1 input,
+.separate-entrance .m-item-1 input {
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.pop-ct .pop-num input.error_b,
+.separate-entrance .pop-num input.error_b,
+.pop-ct .m-item input.error_b,
+.separate-entrance .m-item input.error_b,
+.pop-ct .m-item-1 input.error_b,
+.separate-entrance .m-item-1 input.error_b {
+	border: 1px solid #ff5757;
+	-webkit-animation: input_error .5s ease;
+	-o-animation: input_error .5s ease;
+	animation: input_error .5s ease
+}
+
+@keyframes input_error {
+	0% {
+		left: 10px
+	}
+	20% {
+		left: -10px
+	}
+	40% {
+		left: 5px
+	}
+	60% {
+		left: -5px
+	}
+	80% {
+		left: 3px
+	}
+	100% {
+		left: 0
+	}
+}
+
+.pop-ct .error-tips,
+.separate-entrance .error-tips,
+.pop-ct .pw-tips,
+.separate-entrance .pw-tips {
+	position: absolute;
+	left: 0;
+	margin: 5px 0;
+	line-height: 14px
+}
+
+.pop-btn {
+	display: block;
+	width: 320px;
+	height: 40px;
+	margin: 5px 0 15px;
+	font-size: 16px;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+	background-color: rgba(140,198,63,1);
+	border-radius: 3px;
+	overflow: hidden;
+	cursor: pointer
+}
+
+.pop-bot {
+	height: 23px
+}
+
+.pop-bot a {
+	font-size: 14px;
+	color: #999;
+	cursor: pointer
+}
+
+.pop-bot a:hover {
+	text-decoration: underline
+}
+
+.pop-bot .log-wechat {
+	float: right;
+	padding-left: 24px;
+	/*background: url("../img/i-wechat.png") no-repeat 0 center*/
+}
+
+.pop-reg .pop-ct.log,
+.wechat-log .pop-ct.log {
+	display: none;
+	background-color: #fafafa;
+}
+
+.pop-tit {
+	display: block;
+	width: 100%;
+	font-size: 18px;
+	line-height: 57px;
+	text-align: center
+}
+
+.pop-hd img {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	left: 50%;
+	top: -32px;
+	margin-left: -31px;
+	border: 3px solid #fff;
+	border-radius: 50%
+}
+
+.pop-hd b {
+	display: block;
+	padding-top: 32px;
+	line-height: 25px;
+	font-size: 14px;
+	color: #999;
+	text-align: center
+}
+
+.reg-succ .top {
+	height: 72px;
+	padding-top: 98px;
+	text-align: center;
+	/*background: url("../img/i-reg-succ.png") no-repeat center 42px*/
+}
+
+.reg-succ .top b {
+	font-size: 28px
+}
+
+.reg-succ .top p {
+	font-size: 16px;
+	color: #999
+}
+
+.u-bgff.pop-btn {
+	color: #333
+}
+
+.sche-pop i.sche-del,
+.sche-pop .tit i,
+.sche-pop .tit em,
+.sche-pop .time i,
+.sche-pop .select em,
+.sche-pop li.unselected em,
+.sche-pop li.order-not em {
+	/*background-image: url("../img/sche-sprite.png");*/
+	background-repeat: no-repeat
+}
+
+.sche-pop {
+	display: none;
+	top: -160%;
+	width: 1200px
+}
+
+.sche-pop .sche-tit {
+	height: 49px;
+	padding-left: 15px;
+	font-weight: normal;
+	line-height: 49px;
+	font-size: 22px;
+	border-bottom: 1px solid #e6e6e6
+}
+
+.sche-pop i.sche-del {
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	display: block;
+	width: 34px;
+	height: 34px;
+	background-position: 0 0;
+	cursor: pointer
+}
+
+.sche-pop .left,
+.sche-pop .right {
+	padding-left: 15px;
+	padding-right: 15px
+}
+
+.sche-pop .left {
+	float: left;
+	width: 608px
+}
+
+.sche-pop .tit {
+	display: block;
+	margin-top: 28px;
+	line-height: 16px;
+	font-size: 16px;
+	color: #999
+}
+
+.sche-pop .tit span {
+	font-size: 12px
+}
+
+.sche-pop .tit i,
+.sche-pop .tit em {
+	display: inline-block
+}
+
+.sche-pop .tit i {
+	width: 10px;
+	height: 6px;
+	background-position: -34px -27px
+}
+
+.sche-pop .tit em {
+	width: 6px;
+	height: 6px;
+	background-position: -46px -27px
+}
+
+.sche-pop .time {
+	width: 380px;
+	height: 65px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden
+}
+
+.sche-pop .time ul {
+	width: 510px;
+	margin-top: 30px
+}
+
+.sche-pop .time li {
+	float: left;
+	width: 46px;
+	margin-right: 120px;
+	cursor: default
+}
+
+.sche-pop .time li.on i {
+	background-position: -14px -39px
+}
+
+.sche-pop .time i {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 8px;
+	vertical-align: text-top;
+	background-position: 0 -39px
+}
+
+.sche-pop .location {
+	width: 548px;
+	margin: 20px auto 40px;
+	overflow: hidden
+}
+
+.sche-pop .location ul {
+	width: 592px;
+	margin-top: 10px
+}
+
+.sche-pop .location li {
+	position: relative;
+	float: left;
+	width: 150px;
+	height: 78px;
+	margin-right: 45px;
+	padding-top: 14px;
+	text-align: center;
+	color: #999;
+	border: 1px solid #dbdbdb;
+	border-radius: 3px;
+	cursor: pointer
+}
+
+.sche-pop .location b.pir {
+	font-size: 16px
+}
+
+.sche-pop .location i,
+.sche-pop .location b {
+	display: block
+}
+
+.sche-pop .location em {
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	display: block;
+	width: 26px;
+	height: 20px;
+	margin-left: -13px
+}
+
+.sche-pop li.select {
+	border: 1px solid #f80
+}
+
+.sche-pop li.select i,
+.sche-pop li.select em,
+.sche-pop li.select b {
+	color: #f80
+}
+
+.sche-pop li.select em {
+	background-position: -27px -56px
+}
+
+.sche-pop li.unselected .pir {
+	color: #f80
+}
+
+.sche-pop li.unselected em {
+	background-position: -53px -56px
+}
+
+.sche-pop li.order-not em {
+	background-position: 0 -56px
+}
+
+.sche-pop .right {
+	float: left;
+	width: 530px;
+	height: 670px;
+	/*background: url("../img/pop-img-bg.jpg") repeat-y 0 0*/
+}
+
+.m-h768-special {
+	width: 1000px
+}
+
+.m-h768-special .left {
+	width: 490px
+}
+
+.m-h768-special .tit {
+	margin-top: 15px
+}
+
+.m-h768-special .location {
+	width: 456px;
+	margin: 10px auto 10px
+}
+
+.m-h768-special .location ul {
+	margin-top: 15px
+}
+
+.m-h768-special .location li {
+	width: 130px;
+	height: 60px;
+	margin-right: 30px
+}
+
+.m-h768-special .right {
+	width: 450px;
+	height: 595px
+}
+
+.m-h768-special .schedule-lst ul {
+	height: 453px
+}
+
+.m-h768-special .sche-bottom {
+	margin-top: 15px
+}

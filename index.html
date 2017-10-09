@@ -1,0 +1,244 @@
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>今日校园-高校新媒体广告平台</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<!--默认文档模式-->
+<meta name="renderer" content="webkit">
+<!-- 指定网页使用 webkit 引擎渲染 -->
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<!--初始样式-->
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<!--头部尾部-->
+<link rel="stylesheet" type="text/css" href="css/global.css">
+<!--全局样式（模块化）-->
+<link rel="stylesheet" type="text/css" href="css/master.css">
+<!--内容样式-->
+<link rel="stylesheet" type="text/css" href="css/pop.css">
+<!--弹窗样式-->
+<link rel="stylesheet" type="text/css" href="css/jquery.range.css">
+<!--拖动-->
+<style type="text/css">
+	footer{
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+	footer>div>a div{
+	  display: inline-block;
+	  font-size: 20px;
+	  color: #000;
+	  margin:10px;
+	}
+.g-hd{ width: 100%; }
+#wrap1{ width: 100%;height: 1030px; }
+	.tup1{ width: 100%;height: 515px; }
+	.imgwrap{ width: 100%; height: 100%; }
+</style></head>
+
+<body style="width: 100%; height: 100%;">
+	<!--头部-->
+<div class="g-hd g-hd-wrap">
+	<div class="m-hd-top"></div>
+	<div class="m-nav" style="overflow: hidden; height: 80px; background-color: #ff9d00;">
+		<div class="g-wrap tupo" style="margin-left: auto;">
+			<oo></oo>
+			<div class="top_img">
+				<img class="imglo" src="img/logo.png">
+            	<span class="spanlogo">精准渠道推广平台</span>
+			</div>
+			<div class="top_q">
+				<div class="top_lef" style=" ">
+					<ul class="menu" style="width: 100%;">
+						<li class="lst li1" style=""><a style="display: inline-block;width: 68px;" href="index.html" class="nav on">首页</a>
+						</li>
+						<li class="lst li2" style="width: 140px;"><a style="" href="information.html" class="nav ">资讯</a>
+						</li>
+						<!-- <li class="lst " style="width: 124px;"><a href="cases.jsp" class="nav " target="_blank">广告投放案例</a>
+						</li>
+						<li class="lst " style="width: 100px;"><a href="wechatConfig.jsp" class="nav ">微信运营工具</a>
+
+						</li> -->
+						<li class="lst " style="width: 100px;"><a href="about.html" class="nav ">关于我们</a>
+
+						</li>
+
+					</ul>
+				</div>
+				<!-- <div class="top_rig">
+					<p id="ptexy">
+
+						<span class="span58"> <a href="javascript:void(0);" class="m-log-in lup">登录</a> </span>
+
+					</p>
+				</div> -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="pop-bg"></div>
+<!--注册登录-->
+<div class="pop-reg u-dsn">
+	<ul class="pop-tab">
+		<li>登录</li>
+	</ul>
+	<i class="pop-del"></i>
+	<div class="pop-ct log">
+		<form action="" id="log_form">
+			<div class="pop-num">
+				<input type="text" placeholder="手机号" maxlength="11" class="num pop-txt-w pop-txt-b" name="mobile" onkeyup="value=value.replace(/[^\d]/g,'')">
+				<p class="error-tips"></p>
+			</div>
+			<div class="pop-num">
+				<input type="password" placeholder="密码（6-10位字符）" maxlength="10" class="pw pop-txt-w pop-txt-b" name="password">
+			</div>
+			<div class="pop-num">
+				<input type="text" placeholder="验证码" class="mobile pop-txt-b" name="verifiy_code"> <span class="change-yzm">看不清换一张</span>
+				<div class="mobile-yzm">
+					<img src="/VerifyCodeServlet?time=1" alt="">
+				</div>
+			</div>
+			<a href="javascript:;" class="pop-btn" id="m_log">登录</a>
+		</form>
+		<p class="pop-bot"></p>
+	</div>
+</div>
+	<!--焦点图 大图滚动-->
+
+<!--焦点图 大图滚动-->
+<div class="fullSlide">
+	<div class="bd">
+		<ul style="position: relative; width: 1200px; height: 500px;">
+			<li style="position: absolute; width: 1200px; left: 0px; top: 0px; display: none;">
+				<a href="Official-Accounts.jsp" target="_self" class="banner-item" style="background-image: url('http://jinrixiaoyuan.oss-cn-shanghai.aliyuncs.com/guangwang/lunbotu/lunbotu1.jpg');background-size: cover;"></a>
+			</li>
+			<li style="position: absolute; width: 1200px; left: 0px; top: 0px; display: none;">
+				<a href="Official-Accounts.jsp" target="_self" class="banner-item" style="background-image: url('http://jinrixiaoyuan.oss-cn-shanghai.aliyuncs.com/guangwang/lunbotu/lunbotu2.jpg');background-size: cover;"></a>
+			</li>
+			<li style="position: absolute; width: 1200px; left: 0px; top: 0px; display: list-item;">
+				<a href="Official-Accounts.jsp" target="_self" class="banner-item" style="background-image: url('http://jinrixiaoyuan.oss-cn-shanghai.aliyuncs.com/guangwang/lunbotu/lunbotu3.jpg');background-size: cover;"></a>
+			</li>
+		</ul>
+	</div>
+	<div class="hd">
+		<ul><li class="">1</li><li class="">2</li><li class="on">3</li></ul>
+	</div>
+	<span class="prev" style="opacity: 0.8; display: none;"></span>
+	<span class="next" style="opacity: 0.8; display: none;"></span>
+</div>
+
+<!--中间栏-->
+
+<div id="wrap1" class="g-wrap" style="text-align: center; width: 100%; margin-left: auto;">
+	   <div class="tup1" style="width: 100%;">
+	   	<img class="imgwrap" src="http://jinrixiaoyuan.oss-cn-shanghai.aliyuncs.com/guangwang/zhengwei/neirong1.jpg" style="width: 100%;">
+	   </div>
+	   <div class="tup1 tup2" style="width: 100%;">
+	      <img class="imgwrap imgst" src="http://jinrixiaoyuan.oss-cn-shanghai.aliyuncs.com/guangwang/zhengwei/neirong2.jpg" style="width: 100%;">
+	   </div>
+	</div>
+
+
+<!--尾部-->
+<footer>
+	<div>
+		<a href="javascript:void(0)">
+			<div>关于我们</div>
+		</a>
+		<a href="javascript:void(0)">
+			<div>联系我们</div>
+		</a>
+	</div>
+	<div style="end">
+		闽ICP备16005895号 Copyright @2017-2018 哈哈哈
+	</div>
+</footer>
+<!--公共尾部-->
+<!--js-->
+<script type="text/javascript" src="js/index/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/index/base.js"></script>
+<script type="text/javascript" src="js/index/main.js"></script>
+<script type="text/javascript" src="js/index/reg_login.js"></script>
+<!-- 登录 -->
+<script type="text/javascript" src="js/index/pop.js"></script>
+<!-- 弹窗 -->
+	<!-- 弹窗 -->
+	<script src="js/index/home_cart_event.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 添加收藏 -->
+	<script src="js/index/jquery.SuperSlide.2.1.js" type="text/javascript" charset="utf-8"></script>
+	<!--banner-->
+	<script src="js/index/jquery.dotdotdot.js" type="text/javascript" charset="utf-8"></script>
+	<!--多行文本溢出隐藏-->
+	<script src="js/index/jquery.range.js" type="text/javascript" charset="utf-8"></script>
+	<!--拖动-->
+	<script src="js/index/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index/jquery.mCustomScrollbar.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index/animateBackground-plugin.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(
+				function() {
+					//鼠标经过dl时，公众号头像 效果出现
+					//      $.app.util.hover_dl_imghbg();
+
+					//文本溢出隐藏
+					$(".m-mt .ct dl dd p.exp").dotdotdot({
+						ellipsis : '... ',
+						height : 56
+					});
+					$(".u-right .left").dotdotdot({
+						ellipsis : '... ',
+						height : 45
+					});
+					$(".m-qt p").dotdotdot({
+						ellipsis : '... ',
+						height : 32
+					});
+
+					$(".fullSlide").hover(
+							function() {
+								$(this).find(".prev,.next").stop(true, true)
+										.fadeTo("show", 0.8);
+							}, function() {
+								$(this).find(".prev,.next").fadeOut();
+							});
+					$(".fullSlide").slide(
+							{
+								titCell : ".hd ul",
+								mainCell : ".bd ul",
+								effect : "fold",
+								autoPlay : true,
+								autoPage : true,
+								trigger : "click",
+								startFun : function(i) {
+									var curLi = jQuery(".fullSlide .bd li").eq(
+											i);
+									if (!!curLi.attr("_src")) {
+										curLi.css("background-image",
+												curLi.attr("_src")).removeAttr(
+												"_src");
+									}
+								}
+							});
+					//拖动
+					$('.single-slider').jRange(
+							{
+								from : 0,
+								to : 40000,
+								step : 1000,
+								scale : [ 0, 4000, 8000, 12000, 16000, 20000,
+										24000, 28000, 32000, 36000, 40000 ],
+								format : '%s',
+								width : 434,
+								showLabels : true,
+								showScale : true
+							});
+					//滚动条
+					$(".made-need .ind-sec ul").mCustomScrollbar({
+						scrollInertia : 550
+					});
+				});
+	</script>
+	<!-- <script type="text/javascript" src="common/require.js"></script> -->
+
+</body></html>

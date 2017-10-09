@@ -1,0 +1,19 @@
+.box{
+  padding:30px;
+}
+.pagetitle{
+  text-align: center;
+}
+.p3{
+  font-weight: 900;
+  color: #000;
+  font-size: 30px;
+  text-align: center;
+}
+.p2{
+    font-weight: 100;
+    font-size: 14px;
+    color: #a2a2a2;
+    clear: both;
+    margin-top: 20px;
+}
