@@ -1,4 +1,4 @@
-(function($,win,doc,unde){
+;(function($,win,doc,unde){
 	$.fn.pageFun = function(options){
 		var that = $(this);
 		var defaults = {
@@ -59,7 +59,7 @@
 				    	}
 				    	else{
 				    		opts.pNum = Math.ceil(opts.res.length / opts.displayCount);
-
+				    		
 				    	}
 
 				    	opts.notContent.addClass("hide");
@@ -90,7 +90,7 @@
 					$(this).siblings("li").removeClass("active");
 
 	                opts.cacheNum = $(this).text();
-
+					
 					if($(this).text() == 1){
 						 opts.firstPage.addClass("disabled");
 						 opts.prevPage.addClass("disabled");
@@ -102,7 +102,7 @@
 							 Method.xhhtml($(this).text(),opts.res.length);
 							 return ;
 	                    };
-
+                  
 					}else if($(this).text() == opts.pNum){
 						opts.firstPage.removeClass("disabled");
 						opts.prevPage.removeClass("disabled");
@@ -120,13 +120,13 @@
 						 opts.lastPage.removeClass("disabled");
 						 opts.nextPage.removeClass("disabled");
 					}
-
+					
 					Method.showPageindex(0, opts.maxPage, $(this).text());
 					Method.xhhtml($(this).text(),$(this).text()*opts.displayCount);
 				});
 
 				opts.prevPage.on("click",function(){ /*点击上页*/
-
+					
 					if(opts.cacheNum == 1){
 
 						return;
@@ -148,7 +148,7 @@
 				});
 
 				opts.nextPage.on("click",function(){  /*点击下页*/
-
+					 
 					if(opts.cacheNum == opts.pNum){
 						return;
 					}
@@ -163,9 +163,9 @@
 						opts.nextPage.addClass("disabled");
 						Method.xhhtml(opts.cacheNum,opts.res.length);
 					}else{
-
+						
 						Method.xhhtml(opts.cacheNum,opts.cacheNum*opts.displayCount);
-
+						
 					}
 					Method.showPageindex(0, opts.maxPage, opts.cacheNum);
 				});
@@ -246,16 +246,16 @@
 
 			},
 			xhhtml : function(index,count){
-
-
+				
+				
 				for (var i = ((index-1)*opts.displayCount); i < count; i++) {
                     opts.pageDiv.append(opts.dataFun(opts.res[i]));
                 }
                 opts.keuInput.val(index);
 			},
 			showPageindex : function(min, max, index) {
-
-
+			
+				
                 if (index <= Math.ceil(max / 2)) {
                     min = 0;
                     max = max;
@@ -263,17 +263,17 @@
                 else if (opts.pNum - index < Math.ceil(max / 2)) {
                     min = opts.pNum - max;
                     max = opts.pNum ;
-                }
+                } 
 			 else {
 console.log(min)
             console.log(max)
-            console.log(index)
+            console.log(index) 
                     min = Math.round(index - max / 2)-1;
                     max = Math.round(Number(index) + Number(max / 2))-1;
 					console.log(min)
             console.log(max)
-            console.log(index)
-
+            console.log(index) 
+				
                 }
                 that.find(".pageObj li").hide();
                 for (var i = min; i < max; i++) {

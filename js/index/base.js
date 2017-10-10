@@ -1,13 +1,18 @@
 /**
- * Created by mc on 2016/3/28.
+ * Created by chaoge on 2017/10/10.
  */
 $(function(){
-//	$("#aaaa").click(function () {
-//	$(".pop-reg").css("display","block");
-//	$(".pop-ct").css("display","block");
-//	$("#aaaa").css("color":"#dcfc2b");
-//	alert(5)
-//})
+  //置顶图标显示
+      $('#top-back').hide()
+      $(window).scroll(function(){
+      	 if($(this).scrollTop() > 350){
+      		$("#top-back").fadeIn();
+      	 }
+      	 else{
+      		$("#top-back").fadeOut();
+      	 }
+        })
+    
     //用户登录
     //登陆之后，当用户设备小于1280px时，宽度 特殊处理
     if($("div").is('.toolbar')){
@@ -214,7 +219,7 @@ $(function(){
     });
 
 
-   
+
 
     //推广类型----复选框
     $(".made-need .pro-type a,.made-need .ind-sec b.m-msg").toggle(function(){
@@ -543,32 +548,3 @@ $(function(){
 
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
