@@ -4,7 +4,16 @@ require(['./js/common/config.js'],function(config){
           page={
             init:function(){
               var that=this;
-              that.initData()
+              console.log($('section').height())
+              that.initJs();
+              that.initData();
+            },
+            initJs:function(){
+              var bodyHeight=$('body').height(),
+              sectionHeight=$('section').height();
+              if(sectionHeight+154 < bodyHeight){
+                $('footer').css('margin-top',bodyHeight-sectionHeight-154)
+              }
             },
             initData:function(){
               $.ajax({
