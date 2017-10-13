@@ -1,5 +1,5 @@
 require(['./js/common/config.js'],function(config){
-  require(['pagination','template'],function(page,template){
+  require(['pagination','template','mock'],function(page,template,Mock){
         $(function(){
           page={
             init:function(){
@@ -16,11 +16,21 @@ require(['./js/common/config.js'],function(config){
               }
             },
             initData:function(){
+              //模拟数据
+              Mock.mock('http://test.com', {
+                'data|3':[{
+                  id     :    Mock.Random.id(),
+                  title  : Mock.Random.title(5),
+                  content: Mock.Random.paragraph(),
+                  time : '@date("yyyy-MM-dd")'
+                }]
+              });
               $.ajax({
-                url:'http://192.168.1.55/eolinker_os/server/index.php?g=Web&c=Mock&o=success&mockCode=B3j8G7Qu6JJ3IXQKjmjmAFIdaPCsFuLj',
+                url:'http://test.com',
                 type:'get',
                 success:function(res){
-                  var html=template('artical',res);
+                  var res1=JSON.parse(res)
+                  var html=template('artical',res1);
                   $('#container').html(html);
                 }
               })
