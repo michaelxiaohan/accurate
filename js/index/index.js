@@ -1,10 +1,39 @@
 require(['./js/common/config.js'],function(config){
-  require(['slider'],function(slider){
-    $(document).ready(
-				function() {
-					//鼠标经过dl时，公众号头像 效果出现
-					//      $.app.util.hover_dl_imghbg();
-					$(".fullSlide").hover(
+  require(['slider','mock','template'],function(slider,Mock,template){
+    $(function(){
+      page={
+        init:function(){
+          var that=this;
+          that.initJs();
+          that.initData();
+        },
+        initJs:function(){
+          var self=this;
+          self.slider()
+        },
+        initData:function(){
+          var self=this;
+          // 模拟数据
+          Mock.mock('http://test.com', {
+            'data|8':[{
+              image: Mock.Random.image('720x300')
+            }]
+          });
+          //
+          $.ajax({
+            url:'http://test.com',
+            params:{id:self.paramsId},
+            type:'get',
+            success:function(res){
+              var res1=JSON.parse(res);
+              console.log(res1)
+              var html=template('imageContain',res1);
+              // $('#wrap1').html(html);
+            }
+          })
+        },
+        slider:function(){
+          $(".fullSlide").hover(
 							function() {
 								$(this).find(".prev,.next").stop(true, true)
 										.fadeTo("show", 0.8);
@@ -29,21 +58,25 @@ require(['./js/common/config.js'],function(config){
 									}
 								}
 							});
-				});
-				//置顶图标显示
-					$('#top-back').hide()
-					$(window).scroll(function(){
-						 if($(this).scrollTop() > 350){
-							$("#top-back").fadeIn();
-						 }
-						 else{
-							$("#top-back").fadeOut();
-						 }
-					  })
+              //置顶图标显示
+      					$('#top-back').hide();
+      					$(window).scroll(function(){
+      						 if($(this).scrollTop() > 350){
+      							$("#top-back").fadeIn();
+      						 }
+      						 else{
+      							$("#top-back").fadeOut();
+      						 }
+      					  })
 
-				//置顶事件
-        $('#top-back').click(function(){
-           $('body,html').animate({scrollTop:0},300);
-        })
+      				//置顶事件
+              $('#top-back').click(function(){
+                 $('body,html').animate({scrollTop:0},300);
+              })
+          }
+        }
+      page.init();
+
+    })
   })
 })
