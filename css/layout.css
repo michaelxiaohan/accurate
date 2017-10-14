@@ -1,3 +1,13 @@
+.tags{
+	font-size: 12px;
+    margin-top: 10px;
+    margin-left: 5px;
+    background: #ff9c00;
+    color: #fff;
+    padding: 0px 7px;
+    display: inline-block;
+    border-radius: 2px;
+}
 .bs {
 	-webkit-box-shadow: 0 0 8px rgba(255, 140, 10, 0.5);
 	-moz-box-shadow: 0 0 8px rgba(255, 140, 10, 0.5);
