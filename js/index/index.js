@@ -9,26 +9,44 @@ require(['./js/common/config.js'],function(config){
         },
         initJs:function(){
           var self=this;
-          self.slider()
+
         },
         initData:function(){
           var self=this;
           // 模拟数据
           Mock.mock('http://test.com', {
-            'data|8':[{
+            'data|8':[{ //首页8张图片数据
+              image: Mock.Random.image('720x300')
+            }],
+            'slider|3':[{ //首页轮播图
               image: Mock.Random.image('720x300')
             }]
           });
           //
           $.ajax({
             url:'http://test.com',
-            params:{id:self.paramsId},
             type:'get',
             success:function(res){
               var res1=JSON.parse(res);
-              console.log(res1)
               var html=template('imageContain',res1);
-              // $('#wrap1').html(html);
+              var htmlSlider=template('slider',res1);
+              $('#wrap1').html(
+                html+`<footer>
+           		 	<div>
+           		 		<a href="javascript:void(0)">
+           		 			<div>关于我们</div>
+           		 		</a>
+           		 		<a href="javascript:void(0)">
+           		 			<div>联系我们</div>
+           		 		</a>
+           		 	</div>
+           		 	<div style="end">
+           		 		闽ICP备16005895号 Copyright @2017-2018 哈哈哈
+           		 	</div>
+           		 </footer>`
+              );
+              $('#sliderContain').html(htmlSlider);
+              self.slider();
             }
           })
         },

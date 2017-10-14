@@ -49,28 +49,25 @@
               <p class="p3">精准推广平台简介</p>
       	      <p class="p4"><font color="#dadada">———</font>&nbsp;&nbsp;&nbsp;about&nbsp;&nbsp;&nbsp;<font color="#dadada">———</font></p>
       		  </header>
-      		  <div class="atmo">
-      		   <!-- <a href="http://www.qzcole.com/wp-content/themes/qzcole/images/huan/good.png" target="_blank"><img src="http://www.qzcole.com/wp-content/themes/qzcole/images/huan/good.png" class="zero"></a>
-             <a href="http://www.qzcole.com/wp-content/themes/qzcole/images/huan/huan1.jpg" target="_blank"><img src="http://www.qzcole.com/wp-content/themes/qzcole/images/huan/huan1.jpg" class="one"></a>
-             <a href="http://www.qzcole.com/wp-content/themes/qzcole/images/huan/huan3.png" target="_blank"><img src="http://www.qzcole.com/wp-content/themes/qzcole/images/huan/huan3.png" class="two"></a>
-             <img src="http://www.qzcole.com/wp-content/themes/qzcole/images/huan/huan9.jpg" class="three"> -->
-             <a href="http://www.qzcole.com/wp-content/themes/qzcole/images/huan/huan4.png" target="_blank"><img src="http://www.qzcole.com/wp-content/themes/qzcole/images/huan/huan4.png" class="four"></a>
-             <a href="http://www.qzcole.com/wp-content/themes/qzcole/images/huan/huan5.png" target="_blank"> <img src="http://www.qzcole.com/wp-content/themes/qzcole/images/huan/huan5.png" class="five"></a>
-      		   <img src="http://www.qzcole.com/wp-content/themes/qzcole/images/huan/huan6.jpg" class="six">
-      		 </div>
+            <div id="container">
 
-            <div class="content-text">
-              <p>沙优成长中心隶属广州沙优商务服务有限公司，本中心是一家专业的青少儿心理成长教育咨询机构，主要服务对象为 <strong>“4－16岁”</strong> 的孩子和家长。本机构教育辅导方案，均以先进的心理学、教育学、行为科学理论为基石，以专业系统的技术为支撑，确保有效性。我们对每个参加咨询训练的孩子，都会针对性地进行严谨科学的评估，再为其设计特定的方案，因材施教，确保效果。</p>
-              <p>中心团队成员均毕业于重点大学应用心理系，平均有着7年以上的青少儿教育经验，沙优秉承“亲子共同成长”的方针，主导以家庭系统的视角推动孩子心灵健康成长。</p>
-              <h1>服务项目</h1>
-              <p><strong>1. </strong><a href="http://www.qzcole.com/psychological" target="_blank" rel="noopener">“一对一” 青少儿心理成长教育咨询</a></p>
-              <p><strong>2. </strong><a href="http://www.qzcole.com/promote" target="_blank" rel="noopener">儿童学习问题的改善与学习能力的提升</a></p>
-              <!-- <p><strong>3. </strong><a href="http://www.qzcole.com/qinshang" target="_blank" rel="noopener">小班制儿童情商教育培训</a></p> -->
-              <blockquote><p><span style="color: #ff9c00;"><strong>联系我们：</strong></blockquote>
-              <p>QQ:656532656</p>
-              <p>微信:23265656</p>
-              <p>地址：福建省厦门市</p>
             </div>
+            <script id="imageAndContent" type="text/html">
+              <div class="atmo">
+                {{each images as v i}}
+                  <a href="{{v.image}}" target="_blank"><img src="{{v.image}}" class="four"></a>
+                {{/each}}
+        		 </div>
+              <div class="content-text">
+                <p>{{content}}</p>
+                <blockquote><p><span style="color: #ff9c00;"><strong>联系我们：</strong></blockquote>
+                <div style="margin-left:20px;">
+                  <p>QQ:656532656</p>
+                  <p>微信:23265656</p>
+                  <p>地址：福建省厦门市</p>
+                </div>
+              </div>
+            </script>
           </article>
         </div>
         <div class="right">
@@ -90,10 +87,55 @@
           闽ICP备16005895号 Copyright @2017-2018 哈哈哈
         </div>
       </footer>
-
     </main>
-    <script type="text/javascript" src="js/index/jquery-1.8.0.min.js"></script>
-    <script type="text/javascript" src="js/common/page.js"></script>
-    <script type="text/javascript" src="js/information.js"></script>
+    <!-- 右侧栏 -->
+      <div class="cndns-right">
+          <div class="cndns-right-meau meau-sev">
+              <a href="javascript:" class="cndns-right-btn">
+                  <span class="demo-icon">&#xe901;</span>
+                  <p>
+                      在线<br />
+                      客服
+                  </p>
+              </a>
+              <div class="cndns-right-box">
+                  <div class="box-border">
+                      <div class="sev-t">
+                          <span class="demo-icon">&#xe901;</span>
+                          <p>在线客服<i>服务时间：9:00-24:00</i></p>
+                          <div class="clear"></div>
+                      </div>
+                      <div class="sev-b">
+                          <h4>选择下列产品马上在线沟通：</h4>
+                          <ul id="zixunUl">
+                              <li><a href="javascript:void(0);">域名/主机</a></li>
+
+                              <li><a href="javascript:void(0);">建站/网店</a></li>
+                              <li><a href="javascript:void(0);">企业邮局</a></li>
+                              <li><a href="javascript:void(0);">代理咨询</a></li>
+                              <li><a href="javascript:void(0);">网站推广</a></li>
+                              <li><a href="javascript:void(0);">橙云主机</a></li>
+
+                              <li><a href="javascript:void(0);">域名交易</a></li>
+
+                              <li><a href="javascript:void(0);">租用托管(BGP)</a></li>
+
+                              <li><a href="javascript:void(0);">其他产品</a></li>
+                              <div class="clear"></div>
+                          </ul>
+                      </div>
+                      <span class="arrow-right"></span>
+                  </div>
+              </div>
+          </div>
+          <div class="cndns-right-meau meau-top" id="top-back">
+              <a href="javascript:" class="cndns-right-btn">
+                  <span class="demo-icon">&#xe904;</span>
+                  <i>顶部</i>
+              </a>
+          </div>
+
+      </div>
+    <script data-main="js/about/about.js" src="js/common/require.js"></script>
   </body>
 </html>

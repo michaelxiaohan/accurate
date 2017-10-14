@@ -66,17 +66,15 @@
 <!--焦点图 大图滚动-->
 <div class="fullSlide">
 	<div class="bd">
-		<ul style="position: relative; width: 1200px; height: 500px;">
-			<li style="position: absolute; width: 1200px; left: 0px; top: 0px; display: none;">
-				<a href="javascript:void(0)" target="_self" class="banner-item" style="background-image: url('http://jinrixiaoyuan.oss-cn-shanghai.aliyuncs.com/guangwang/lunbotu/lunbotu1.jpg');background-size: cover;"></a>
-			</li>
-			<li style="position: absolute; width: 1200px; left: 0px; top: 0px; display: none;">
-				<a href="javascript:void(0)" target="_self" class="banner-item" style="background-image: url('http://jinrixiaoyuan.oss-cn-shanghai.aliyuncs.com/guangwang/lunbotu/lunbotu2.jpg');background-size: cover;"></a>
-			</li>
-			<li style="position: absolute; width: 1200px; left: 0px; top: 0px; display: list-item;">
-				<a href="javascript:void(0)" target="_self" class="banner-item" style="background-image: url('http://jinrixiaoyuan.oss-cn-shanghai.aliyuncs.com/guangwang/lunbotu/lunbotu3.jpg');background-size: cover;"></a>
-			</li>
+		<ul id="sliderContain" style="position: relative; width: 1200px; height: 500px;">
 		</ul>
+		<script id="slider" type="text/html">
+			{{each slider as v i}}
+				<li style="position: absolute; width: 1200px; left: 0px; top: 0px; display: none;">
+					<a href="javascript:void(0)" target="_self" class="banner-item" style="background-image: url('{{v.image}}');background-size: cover;"></a>
+				</li>
+			{{/each}}
+		</script>
 	</div>
 	<div class="hd">
 		<ul><li class="">1</li><li class="">2</li><li class="on">3</li></ul>
@@ -88,33 +86,15 @@
 <!--中间栏-->
 
 <div id="wrap1" class="g-wrap" style="text-align: center; width: 100%; margin-left: auto;">
-	   <!-- <div class="tup1" style="width: 100%;">
-	   	<img class="imgwrap" src="http://jinrixiaoyuan.oss-cn-shanghai.aliyuncs.com/guangwang/zhengwei/neirong1.jpg" style="width: 100%;">
-	   </div>
-	   <div class="tup1 tup2" style="width: 100%;">
-	      <img class="imgwrap imgst" src="http://jinrixiaoyuan.oss-cn-shanghai.aliyuncs.com/guangwang/zhengwei/neirong2.jpg" style="width: 100%;">
-	   </div> -->
-		 <footer>
-		 	<div>
-		 		<a href="javascript:void(0)">
-		 			<div>关于我们</div>
-		 		</a>
-		 		<a href="javascript:void(0)">
-		 			<div>联系我们</div>
-		 		</a>
-		 	</div>
-		 	<div style="end">
-		 		闽ICP备16005895号 Copyright @2017-2018 哈哈哈
-		 	</div>
-		 </footer>
+
 </div>
-<!-- <script type="text/html" id="imageContain">
+<script type="text/html" id="imageContain">
 	{{each data as v i}}
 	<div class="tup1" style="width: 100%;">
 	 <img class="imgwrap" src="{{v.image}}" style="width: 100%;">
 	</div>
 	{{/each}}
-</script> -->
+</script>
 <!-- 右侧栏 -->
 	<div class="cndns-right">
 	    <div class="cndns-right-meau meau-sev">
@@ -163,21 +143,6 @@
 	    </div>
 
 	</div>
-
-<!--尾部-->
-<!-- <footer>
-	<div>
-		<a href="javascript:void(0)">
-			<div>关于我们</div>
-		</a>
-		<a href="javascript:void(0)">
-			<div>联系我们</div>
-		</a>
-	</div>
-	<div style="end">
-		闽ICP备16005895号 Copyright @2017-2018 哈哈哈
-	</div>
-</footer> -->
 
 	<script data-main="js/index/index.js" src="js/common/require.js"></script>
 
