@@ -10,6 +10,13 @@ require(['./js/common/config.js'],function(config){
             },
             initJs:function(){
               var self=this;
+              setTimeout(function(){
+                var mainHeight=$('body').height(),
+                sectionHeight=$('section').height();
+                if(sectionHeight+154 < mainHeight){
+                  $('footer').css('margin-top',mainHeight-sectionHeight-154)
+                }
+              },500)
               //置顶图标显示
       					$('#top-back').hide();
       					$(window).scroll(function(){
