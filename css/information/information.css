@@ -1,6 +1,9 @@
 body{
   background: #f5f5f5;
 }
+main{
+  min-height:calc(100% - 154px);
+}
 main>section{
   display: flex;
   flex-direction: row;
@@ -25,6 +28,7 @@ main>section .tit{
   color: #000;
   font-size: 22px;
 }
+
 footer{
   display: flex;
   flex-direction: column;
