@@ -906,7 +906,7 @@ ul.link .login a {
 #ptexy{ height: 24px;line-height: 24px;margin-top: 32px;font-size: 13px;color: white;text-align: center; width: 143px;}
 .imgte　{margin-top: 3px;margin-left: 50px;　}
 .colo{ color: white; }
-.imglo{ float: left; margin-top: 20px;  vertical-align: middle;}
+.imglo{ float: left; margin-top: 20px;  vertical-align: middle;height:200px;width:auto;margin-top:-50px;}
 .yhml{ margin: 0 5px 0 10px; }
 
 
@@ -914,16 +914,7 @@ ul.link .login a {
 .lup{ margin-top: 10px;color: white; }
 .g-wrap .u-pl .itema:hover { text-decoration: underline; }
 
-.top_img .spanlogo{ display: inline-block;height: 47px;color:white;font-size: 14px;line-height: 47px;margin-top: 20px; }
-/**{margin:0;padding:0;list-style-type:none;}
-a,img{border:0;text-decoration:none;}
-body{font:12px/180% Arial, Helvetica, sans-serif ,"新宋体";}
-p{margin:0px;padding:0px;line-height:20px;}
-i{margin:0px;padding:0px;font-style:normal;}
-ul{margin:0px;padding:0px;list-style:none;}
-ul li{margin:0px;padding:0px;list-style:none;}
-a{color:#333333;text-decoration:none;}
-a:hover{color:#ff5a00;text-decoration:none;}*/
+.top_img .spanlogo{ display: inline-block;height: 47px;color:white;font-size: 14px;line-height: 47px;margin-top: 20px;position: relative;right:55px;}
 .clear{clear:both;font-size:0px;line-height:0;height:0;}
 @font-face {
 	font-family: 'icomoon';
